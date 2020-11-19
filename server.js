@@ -21,7 +21,7 @@ var frontend,
 	Packer = require( "./lib/packer" ),
 	querystring = require( "querystring" ),
 	ThemeRoller = require( "./lib/themeroller" ),
-	httpPort = argv.port || 8088,
+	httpPort = argv.port || 8080,
 	routes = {
 		home: "/",
 		download: "/download",
