@@ -11,6 +11,8 @@ COPY . .
 
 RUN grunt prepare
 
+RUN test -e /var/run || ln -s /run /var/run
+
 EXPOSE 8080
 
 CMD ["node", "server.js"]
