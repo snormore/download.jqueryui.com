@@ -1,6 +1,6 @@
 FROM node:current-alpine
 
-WORKDIR /workspace
+WORKDIR /app
 COPY package*.json ./
 
 RUN apk add libxml2 libxslt git imagemagick python3 make g++
